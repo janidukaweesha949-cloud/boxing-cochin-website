@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Updates | Janiya Boxing Coaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="py-4 px-6 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-hand-fist text-[#ff2e63] text-2xl pulse-icon"></i>
+                <span class="footer-brand text-gradient">BOX MASTER</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link font-medium text-sm text-[#a0a0a0]">Home</a>
+                <a href="classes.html" class="nav-link font-medium text-sm text-[#a0a0a0]">Classes</a>
+                <a href="updates.html" class="nav-link active font-medium text-sm">Fight Updates</a>
+                <a href="contact.html" class="nav-link font-medium text-sm text-[#a0a0a0]">Contact</a>
+            </div>
+
+            <a href="contact.html" class="hidden md:inline-block btn-primary text-sm px-6 py-2">Join Now</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#0a0a0a] flex flex-col items-center justify-center space-y-8">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white text-3xl">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html" class="text-2xl font-bold">Home</a>
+        <a href="classes.html" class="text-2xl font-bold">Classes</a>
+        <a href="updates.html" class="text-2xl font-bold text-[#ff2e63]">Fight Updates</a>
+        <a href="contact.html" class="text-2xl font-bold">Contact</a>
+    </div>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-16 px-6 bg-[#080808] border-b border-[rgba(255,255,255,0.05)] text-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#ff2e63] to-purple-900 mix-blend-multiply"></div>
+            <img src="assets/images/boxing_fight_1773032147516.png" class="w-full h-full object-cover blur-sm">
+        </div>
+        <div class="max-w-3xl mx-auto relative z-10 fade-in-up">
+            <span class="inline-block py-1 px-3 border border-[#ff2e63] text-[#ff2e63] text-xs font-bold uppercase tracking-widest rounded-full mb-4 bg-[rgba(255,46,99,0.1)]">Latest News</span>
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4 text-gradient">Boxing Fight Updates</h1>
+            <p class="text-gray-400">Loke wate wena aluthma boxing fights saha apage gym eke events.</p>
+        </div>
+    </div>
+
+    <!-- Updates Content -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <!-- Main Featured Update -->
+        <article class="glass-card mb-16 fade-in-up p-0 overflow-hidden group flex flex-col md:flex-row relative shadow-[0_0_50px_rgba(255,46,99,0.1)] border-[#ff2e63]/30">
+            <div class="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
+                <img src="assets/images/boxing_fight_1773032147516.png" alt="Featured Fight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute top-4 left-4 bg-[#ff2e63] text-white text-xs font-bold px-3 py-1 rounded shadow-lg uppercase tracking-wider">Live Event</div>
+            </div>
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center relative bg-gradient-to-l from-[#111] to-transparent">
+                <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
+                    <span><i class="fa-regular fa-calendar text-[#ff2e63] mr-2"></i> Oct 15, 2026</span>
+                    <span><i class="fa-regular fa-clock text-[#ff2e63] mr-2"></i> 8:00 PM</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4 leading-tight group-hover:text-[#ff2e63] transition-colors">National Championship Sri Lanka</h2>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                    Ilaga maseti pawathweena jathika boxing taragawaliyeta ape gym eken kridakayo 5 denek sahabhagi wenawa. Eyalata subapatham! Suvisheshi matches balanna enna.
+                </p>
+                <div>
+                     <a href="#" class="inline-flex items-center text-[#ff2e63] font-bold hover:text-white transition-colors group/link">
+                        Read Full Story 
+                        <i class="fa-solid fa-arrow-right ml-2 transform group-hover/link:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Other Updates Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Update 1 -->
+            <article class="glass-card fade-in-up delay-100 p-6 flex flex-col group hover:border-[#ff2e63]/50">
+                <div class="text-xs text-[#ff2e63] font-bold tracking-widest uppercase mb-2">Internal Sparring</div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#ff2e63] group-hover:to-[#ff8a00] transition-all">Month-End Sparring Event</h3>
+                <p class="text-gray-400 text-sm mb-4 flex-grow">
+                    Me mase anthimata ape hama student kenekgema progress eka balanna podi sparring event ekak thiyanawa. Samaharun mul wathawata ring ekata bahinawa!
+                </p>
+                <div class="border-t border-[rgba(255,255,255,0.05)] pt-4 mt-auto flex justify-between items-center text-xs text-gray-500">
+                    <span>Oct 05, 2026</span>
+                    <a href="#" class="text-gray-300 hover:text-[#ff2e63] transition-colors">Details <i class="fa-solid fa-angle-right ml-1"></i></a>
+                </div>
+            </article>
+
+            <!-- Update 2 -->
+            <article class="glass-card fade-in-up delay-200 p-6 flex flex-col group hover:border-[#ff2e63]/50">
+                <div class="text-xs text-[#ff2e63] font-bold tracking-widest uppercase mb-2">Global News</div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#ff2e63] group-hover:to-[#ff8a00] transition-all">Heavyweight World Title</h3>
+                <p class="text-gray-400 text-sm mb-4 flex-grow">
+                    Loke lokuma heavyweight match eka me sathiye thiyanawa. Api ape gym eke studentslata meka live pennanawa padak samaga analys karanna.
+                </p>
+                <div class="border-t border-[rgba(255,255,255,0.05)] pt-4 mt-auto flex justify-between items-center text-xs text-gray-500">
+                    <span>Sep 28, 2026</span>
+                    <a href="#" class="text-gray-300 hover:text-[#ff2e63] transition-colors">Details <i class="fa-solid fa-angle-right ml-1"></i></a>
+                </div>
+            </article>
+
+            <!-- Update 3 -->
+            <article class="glass-card fade-in-up delay-300 p-6 flex flex-col group hover:border-[#ff2e63]/50">
+                <div class="text-xs text-[#ff2e63] font-bold tracking-widest uppercase mb-2">Gym Upgrade</div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#ff2e63] group-hover:to-[#ff8a00] transition-all">New Punching Bags</h3>
+                <p class="text-gray-400 text-sm mb-4 flex-grow">
+                    Api me sathiye aluthma thathwaye punching bags saha speed bags gym ekata genawa. Dan obata wadaath hoda training ekak laba ganna puluwan.
+                </p>
+                <div class="border-t border-[rgba(255,255,255,0.05)] pt-4 mt-auto flex justify-between items-center text-xs text-gray-500">
+                    <span>Sep 15, 2026</span>
+                    <a href="#" class="text-gray-300 hover:text-[#ff2e63] transition-colors">Details <i class="fa-solid fa-angle-right ml-1"></i></a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="text-center mt-12 fade-in-up">
+             <button class="btn-secondary">Load More Updates</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-16 pb-8 border-t border-[rgba(255,255,255,0.05)] bg-[#050505] relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[rgba(255,46,99,0.05)] to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
+                <a href="index.html" class="flex items-center gap-2">
+                    <i class="fa-solid fa-hand-fist text-[#ff2e63] text-2xl"></i>
+                    <span class="footer-brand text-gradient">BOX MASTER</span>
+                </a>
+                <div class="flex gap-6">
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-[#ff2e63] hover:border-[#ff2e63] transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-[#ff2e63] hover:border-[#ff2e63] transition-all"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-[#ff2e63] hover:border-[#ff2e63] transition-all"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-[#ff2e63] hover:border-[#ff2e63] transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="text-center border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Box Master Gym. All Rights Reserved.</p>
+                <p class="mt-4 md:mt-0 font-medium tracking-wide">built by <span class="text-[#ff2e63] font-bold">janiya</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
